@@ -4,7 +4,7 @@ import css from './Filter.module.css';
 
 const Filter = () => {
   const dispatch = useDispatch();
-  const hendleFilter = e => {
+  const handleFilter = e => {
     dispatch(filterContact(e.currentTarget.value));
   };
 
@@ -13,7 +13,7 @@ const Filter = () => {
       <label className={css.lable} htmlFor="filter">
         find contacts by name:
       </label>
-      <input name="filter" type="text" onChange={hendleFilter} />
+      <input name="filter" type="text" onChange={handleFilter} />
     </div>
   );
 };
